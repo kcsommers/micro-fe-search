@@ -8,10 +8,6 @@ const deps = require('./package.json').dependencies;
 
 module.exports = (env) => {
   return {
-    output: {
-      publicPath: ASSET_PATH,
-    },
-
     resolve: {
       extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
     },
