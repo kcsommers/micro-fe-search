@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack --mode=production --env production --progress",
-    "build-local": "npm run cpenv:prod && webpack --mode=production --env production --progress",
+    "build-local": "rm -rf dist && npm run cpenv:prod && webpack --mode=production --env production --progress",
     "build-local:start": "npm run build && cd dist && PORT=3000 npx serve",
     "cpenv:dev": "cp .env.development .env",
     "cpenv:prod": "cp .env.production .env",

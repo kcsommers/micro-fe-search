@@ -25,6 +25,8 @@ jobs:
       - name: Build App
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
+          COMPONENTS_PATH: ${{ secrets.COMPONENTS_PATH }}
+          DASHBOARD_PATH: ${{ secrets.DASHBOARD_PATH }}
         run: npm run build
       - name: Run Tests
         run: npm test

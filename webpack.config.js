@@ -79,7 +79,7 @@ module.exports = (env) => {
           kc_components: process.env.COMPONENTS_PATH,
         },
         exposes: {
-          './App': './src/App.tsx',
+          './SearchApp': './src/App.tsx',
         },
         shared: {
           ...deps,
